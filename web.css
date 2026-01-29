@@ -26,12 +26,12 @@ body { font-family: 'Segoe UI', sans-serif; margin: 0; color: #333; }
 
 /* 4. Image ki height fix karein taaki cards ek barabar dikhen */
 .product-img {
-  width: 50%;
-  height: 75px; 
+  width: 70%;
+  height: 85px; 
   object-fit: contain; /* Ya 'cover' use karein */
-  border-radius: 4px;
+  border-radius: 6px;
   display: block;
-  margin: bottom 10px; 
+  margin: bottom 16px; 
 }
   .contact-card{
       display:flex;
@@ -54,6 +54,7 @@ ul li { margin-left: 20px; }
 header { padding: 100px 50px; text-align: center; background: #f4f7f6; }
 .grid { display: flex; justify-content: space-around; padding: 50px; }
 .card { padding: 30px; border: 1px solid #ddd; border-radius: 8px; width: 25%; text-align: center; transition: 0.3s; }
+
 
 
 
