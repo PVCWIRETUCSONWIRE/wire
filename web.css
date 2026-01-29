@@ -28,40 +28,22 @@ body { font-family: 'Segoe UI', sans-serif; margin: 0; color: #333; }
   transform: rotateX(20deg) rotateY(-20deg) rotateZ(5deg);
   transition: transform 0.5s ease;
 }
-.unit{
-    display:flex;
-    flex-direction:column;
-    algin-items:center;
-    front-weight:bold;
-    color: #28a745;
-    margin-top: 10px;
-}
-.size{
-    display:flex;
-    flex-direction:column;
-    algin-items:center;
-    front-weight:bold;
-    color: #28a745;
-    margin-top: 10px;
+.price {
+  font-weight: bold; /* 'front' ko 'font' karein */
+  color: #28a745;
+  text-align: center;
+  margin-top: 10px;
 }
 
-  
-  .product-img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 8px;
-    box-shadow: 5px 5px 15px rgba(0,0,0,0.3);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  /* Hover effect to "lift" images out of the grid */
-  .product-img:hover {
-    transform: translateZ(50px);
-      
-    box-shadow: 10px 10px 30px rgba(0,0,0,0.5);
-    z-index: 10;
-  }
+/* 4. Image ki height fix karein taaki cards ek barabar dikhen */
+.product-img {
+  width: 100%;
+  height: 150px; 
+  object-fit: contain; /* Ya 'cover' use karein */
+  border-radius: 8px;
+  display: block;
+  margin: bottom 15px; 
+}
   .contact-card{
       display:flex;
       flex-direction:column;
@@ -88,6 +70,7 @@ header { padding: 100px 50px; text-align: center; background: #f4f7f6; }
 .card { padding: 30px; border: 1px solid #ddd; border-radius: 8px; width: 25%; text-align: center; transition: 0.3s; }
 
 .card:hover { transform: translateY(-10px); border-color: #007bff; }
+
 
 
 
