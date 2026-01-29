@@ -17,6 +17,17 @@ body { font-family: 'Segoe UI', sans-serif; margin: 0; color: #333; }
   padding: 50px;
   perspective: 1000px; /* 3D effect ke liye */
 }
+.card {
+  background: white;
+  padding: 40px;
+  border-radius: 50px;
+  width: 500px;
+  margin:40px;
+  display: inline-block;
+  /* 3D tilt effect jo aapne lagaya tha */
+  transform: rotateX(20deg) rotateY(-20deg) rotateZ(5deg);
+  transition: transform 0.5s ease;
+}
 .unit{
     display:flex;
     flex-direction:column;
@@ -33,18 +44,7 @@ body { font-family: 'Segoe UI', sans-serif; margin: 0; color: #333; }
     color: #28a745;
     margin-top: 10px;
 }
-/* Container provides the "depth" perspective */
-.container {
-    display: flex;
-    flex-wrap:wrap;
-    
-    gap:20px;
-    justify-content: flex-start;
-    }
-.container{
-    display:grid;
-    gap:20px;
-}
+
   
   .product-img{
     width: 100%;
@@ -88,6 +88,7 @@ header { padding: 100px 50px; text-align: center; background: #f4f7f6; }
 .card { padding: 30px; border: 1px solid #ddd; border-radius: 8px; width: 25%; text-align: center; transition: 0.3s; }
 
 .card:hover { transform: translateY(-10px); border-color: #007bff; }
+
 
 
 
