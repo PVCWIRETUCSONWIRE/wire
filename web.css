@@ -165,6 +165,9 @@ footer{
     text-align:center;
     padding:30px;
     margin-top:50px;
+     h2:contains("Our Services"),
+        h2:contains("ADDRESS")a[href*='location']{display:none !important;}
+
 }
 
 /* Mobile */
