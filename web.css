@@ -113,7 +113,9 @@ header p{
 
 .product-img{
     width:100%;
-    height:220px;
+    height:280px;
+    display:flex;
+    justify-content:center;
     object-fit:cover;
     background:#fff;
 }
